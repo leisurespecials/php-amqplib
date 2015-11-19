@@ -324,7 +324,7 @@ abstract class AbstractChannel
      * @throws \PhpAmqpLib\Exception\AMQPRuntimeException
      * @return mixed
      */
-    public function wait($allowed_methods = null, $non_blocking = false, $timeout = 0)
+    public function wait($allowed_methods = null, $non_blocking = false, $timeout = 2)
     {
         $this->debug->debug_allowed_methods($allowed_methods);
 
